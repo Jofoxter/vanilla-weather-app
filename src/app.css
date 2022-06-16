@@ -1,0 +1,136 @@
+body {
+  background-color: rgba(198, 231, 240, 0.5);
+  font-family: "Chakra Petch", "Gugi", "Electrolize", "Black Ops One",
+    sans-serif;
+}
+h1 {
+  color: rgb(112, 112, 112, 0.9);
+  font-size: 50px;
+  text-align: center;
+  border: 4px solid rgba(43, 123, 173, 0.7);
+  border-radius: 15px;
+  background-color: transparent;
+  margin: 25px 440px;
+  margin-bottom: 1px;
+  padding: 10px;
+  font-weight: bold;
+}
+img {
+  background: transparent;
+  margin: 0 auto;
+  display: block;
+}
+form {
+  position: relative;
+  top: -260px;
+  left: 250px;
+}
+input {
+  color: rgb(112, 112, 112, 0.9);
+  font-size: 25px;
+  border-radius: 10px;
+  border: 4px solid rgba(43, 123, 173, 0.7);
+  background-color: rgba(198, 231, 240, 0.5);
+}
+button {
+  position: relative;
+  top: -260px;
+  left: 260px;
+  color: rgb(112, 112, 112, 0.9);
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 4px solid rgba(43, 123, 173, 0.7);
+  background-color: rgba(198, 231, 240, 0.5);
+}
+.search {
+  color: rgb(112, 112, 112, 0.9);
+  font-size: 20px;
+}
+.actual-icon {
+  color: rgb(112, 112, 112, 0.9);
+  font-size: 50px;
+  line-height: 50px;
+}
+.actual-temperature {
+  font-size: 50px;
+  color: rgb(112, 112, 112, 0.9);
+  font-weight: bold;
+  line-height: 50px;
+}
+.grads {
+  position: relative;
+  font-size: 35px;
+  font-size: 16px;
+  top: -25px;
+}
+.fahrenheit {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(112, 112, 112, 0.9);
+}
+.actual-day-time-wx {
+  color: rgb(112, 112, 112, 0.9);
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 15px;
+}
+.humidity-wind {
+  position: relative;
+  font-size: 15px;
+  top: -365px;
+  left: 420px;
+  color: rgb(112, 112, 112, 0.9);
+  padding: 5px 5px;
+  margin-right: 1160px;
+}
+.actual-weather {
+  position: relative;
+  top: -255px;
+  left: 250px;
+  bottom: 250px;
+  border: 4px solid rgba(43, 123, 173, 0.7);
+  border-radius: 15px;
+  background-color: rgba(198, 231, 240, 0.5);
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: 1008px;
+}
+.forecast-box {
+  position: relative;
+  top: -467px;
+  left: 543px;
+  margin-right: 805px;
+  padding: 10px;
+  bottom: 250px;
+  border: 4px solid rgba(43, 123, 173, 0.7);
+  border-radius: 15px;
+  background-color: rgba(198, 231, 240, 0.5);
+  color: rgb(112, 112, 112, 0.9);
+  font-weight: bold;
+}
+.forecast-icons {
+  font-size: 50px;
+  line-height: 50px;
+}
+.min-temp {
+  font-weight: lighter;
+}
+.my-name {
+  color: rgb(112, 112, 112, 0.9);
+}
+.open-source {
+  text-underline-offset: unset;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.github {
+  position: relative;
+  top: -450px;
+  left: 450px;
+}
