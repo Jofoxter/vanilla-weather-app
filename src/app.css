@@ -15,6 +15,11 @@ h1 {
   padding: 10px;
   font-weight: bold;
 }
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(112, 112, 112, 0.9);
+}
 img {
   background: transparent;
   margin: 0 auto;
@@ -26,6 +31,9 @@ form {
   left: 250px;
 }
 input {
+  position: relative;
+  top: -25px;
+  left: 0px;
   color: rgb(112, 112, 112, 0.9);
   font-size: 25px;
   border-radius: 10px;
@@ -34,8 +42,8 @@ input {
 }
 button {
   position: relative;
-  top: -205px;
-  left: 147px;
+  top: -190px;
+  left: 247px;
   color: rgb(112, 112, 112, 0.9);
   font-size: 25px;
   border-radius: 10px;
@@ -47,64 +55,65 @@ button {
   font-size: 20px;
 }
 .actual-icon {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  left: -10px;
   color: rgb(112, 112, 112, 0.9);
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 30px;
 }
 .actual-temperature {
+  position: relative;
+  top: -5px;
+  left: -10px;
   font-size: 50px;
   color: rgb(112, 112, 112, 0.9);
   font-weight: bold;
-  line-height: 50px;
 }
 .grads {
   position: relative;
+  top: -25px;
+  left: -10px;
   font-size: 35px;
   font-size: 16px;
-  top: -25px;
 }
 .fahrenheit {
   text-decoration: none;
 }
-
-h2 {
-  font-size: 35px;
-  font-weight: bold;
-  color: rgb(112, 112, 112, 0.9);
-}
 .actual-day-time-wx {
   color: rgb(112, 112, 112, 0.9);
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   line-height: 15px;
   text-transform: capitalize;
 }
 .humidity-wind {
   position: relative;
   font-size: 15px;
-  top: -365px;
-  left: 420px;
+  top: -420px;
+  left: 480px;
+  border-radius: 10px;
+  border: 4px solid rgba(43, 123, 173, 0.7);
   color: rgb(112, 112, 112, 0.9);
   padding: 5px 5px;
   margin-right: 1160px;
 }
 .actual-weather {
   position: relative;
-  top: -255px;
+  top: -283px;
   left: 250px;
-  bottom: 250px;
   border: 4px solid rgba(43, 123, 173, 0.7);
   border-radius: 15px;
   background-color: rgba(198, 231, 240, 0.5);
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 10px;
-  margin-right: 1008px;
+  margin-right: 906px;
 }
 .forecast-box {
   position: relative;
-  top: -467px;
-  left: 543px;
-  margin-right: 805px;
+  top: -505px;
+  left: 643px;
+  margin-right: 810px;
   padding: 10px;
   bottom: 250px;
   border: 4px solid rgba(43, 123, 173, 0.7);
