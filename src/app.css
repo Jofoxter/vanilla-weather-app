@@ -77,8 +77,9 @@ button {
   font-size: 35px;
   font-size: 16px;
 }
-.fahrenheit {
+.active {
   text-decoration: none;
+  color: rgb(112, 112, 112, 0.9);
 }
 .actual-day-time-wx {
   color: rgb(112, 112, 112, 0.9);
