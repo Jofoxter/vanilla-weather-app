@@ -122,10 +122,7 @@ button {
   background-color: rgba(198, 231, 240, 0.5);
   color: rgb(112, 112, 112, 0.9);
   font-weight: bold;
-}
-.forecast-icons {
-  font-size: 50px;
-  line-height: 50px;
+  text-align: center;
 }
 .min-temp {
   font-weight: lighter;
@@ -143,4 +140,13 @@ button {
   position: relative;
   top: -440px;
   left: 450px;
+}
+.forecast-icon {
+  text-align: center;
+  margin-top: 10px;
+}
+.forecast-temperatures {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }

@@ -36,6 +36,27 @@ function search(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2"> 
+  <div class="week-days">${day}</div>
+  <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="" width="42" class="forecast-icon"/>
+  <div class="forecast-temperatures">28° <span class="min-temp">16°</span></div>
+</div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
+
 function showTemperature(response) {
   let h2 = document.querySelector("#city");
   h2.innerHTML = response.data.name;
@@ -99,6 +120,7 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
 let celsiusTemperature = null;
 
 let button = document.querySelector("#show-current-position");
