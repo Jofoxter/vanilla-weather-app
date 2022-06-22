@@ -36,19 +36,35 @@ function search(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Sun", "Mon", "Tue", "Wed"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      ` <div class="col-2"> 
-  <div class="week-days">${day}</div>
-  <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="" width="42" class="forecast-icon"/>
-  <div class="forecast-temperatures">28° <span class="min-temp">16°</span></div>
+
+  days.forEach(function (forecastDay, index) {
+    If(index < 5);
+    {
+      forecastHTML =
+        forecastHTML +
+        `<div class="col-2"> 
+  <div class="week-days">${formatDay(forecastDay.dt)}</div>
+  <img src="https://openweathermap.org/img/wn/${
+    forecastDay.weather[0].icon
+  }@2x.png" alt="" width="42" class="forecast-icon"/>
+  <div class="forecast-temperatures">${Math.round(
+    forecastDay.temp.max
+  )}° <span class="min-temp">${Math.round(forecastDay.temp.min)}°</span></div>
 </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
