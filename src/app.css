@@ -51,6 +51,9 @@ button {
   border: 4px solid rgba(43, 123, 173, 0.7);
   background-color: rgba(198, 231, 240, 0.5);
 }
+a {
+  text-decoration: none;
+}
 .search {
   color: rgb(112, 112, 112, 0.9);
   font-size: 20px;
@@ -73,10 +76,12 @@ button {
 }
 .grads {
   position: relative;
-  top: -25px;
+  top: -30px;
   left: -10px;
   font-size: 35px;
   font-size: 16px;
+  font-weight: bold;
+  color: rgb(112, 112, 112, 0.9);
 }
 .active {
   text-decoration: none;
@@ -128,15 +133,13 @@ button {
 .min-temp {
   font-weight: lighter;
 }
-.my-name {
-  color: rgb(112, 112, 112, 0.9);
-}
 .open-source {
   text-underline-offset: unset;
   font-weight: lighter;
   text-decoration: none;
 }
-.github {
+.info {
+  color: rgb(112, 112, 112, 0.9);
   text-align: center;
   position: relative;
   top: -480px;
