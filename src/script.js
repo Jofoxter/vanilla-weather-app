@@ -47,18 +47,18 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  
+
   let forecastHTML = `<div class="row">`;
 
-  days.forEach(function (forecastDay, index) {
-    If(index < 5);
-    {
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `<div class="col-2"> 
   <div class="week-days">${formatDay(forecastDay.dt)}</div>
   <img src="https://openweathermap.org/img/wn/${
-    forecastDay.weather[0].icon}@2x.png" alt="" width="42" class="forecast-icon"/>
+    forecastDay.weather[0].icon
+  }@2x.png" alt="" width="42" class="forecast-icon"/>
   <div class="forecast-temperatures">${Math.round(
     forecastDay.temp.max
   )}° <span class="min-temp">${Math.round(forecastDay.temp.min)}°</span></div>
@@ -72,7 +72,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = "18587a413f83472ff5f95d93ae688338";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -135,3 +135,5 @@ function displayCelsiusTemperature(event) {
 
 let button = document.querySelector("#show-current-position");
 button.addEventListener("click", getCurrentPosition);
+
+searchCity("Milan");
