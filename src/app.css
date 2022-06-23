@@ -43,7 +43,7 @@ input {
 }
 button {
   position: relative;
-  top: -190px;
+  top: -200px;
   left: 247px;
   color: rgb(112, 112, 112, 0.9);
   font-size: 25px;
@@ -54,9 +54,9 @@ button {
 a {
   text-decoration: none;
 }
-.search {
-  color: rgb(112, 112, 112, 0.9);
-  font-size: 20px;
+.search-button,
+.current-button {
+  font-weight: bold;
 }
 .actual-icon {
   display: inline-block;
@@ -81,10 +81,6 @@ a {
   font-size: 35px;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(112, 112, 112, 0.9);
-}
-.active {
-  text-decoration: none;
   color: rgb(112, 112, 112, 0.9);
 }
 .actual-day-time-wx {
@@ -112,15 +108,15 @@ a {
   border: 4px solid rgba(43, 123, 173, 0.7);
   border-radius: 15px;
   background-color: rgba(198, 231, 240, 0.5);
-  padding-left: 20px;
-  padding-top: 10px;
   margin-right: 906px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 .forecast-box {
   position: relative;
-  top: -505px;
+  top: -510px;
   left: 643px;
-  margin-right: 810px;
+  margin-right: 800px;
   padding: 10px;
   bottom: 250px;
   border: 4px solid rgba(43, 123, 173, 0.7);
